@@ -7,6 +7,7 @@ import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
 import moment from "moment";
 import DropDown from "./DropDown";
+import { BasicTooltip } from "../../utils/MinComponent"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircle, faCog } from "@fortawesome/free-solid-svg-icons";
 import { faEye, faPencil, faTrash } from "@fortawesome/free-solid-svg-icons";
@@ -35,7 +36,7 @@ const rows = [
 const validarTipoDato = (valor, tipoDato) => {
   if (tipoDato == "DATE") return moment(valor).format("DD-MM-YYYY");
   if (tipoDato == "TIMESTAMP") return moment(valor).format("DD-MM-YYYY hh:mm a");
-  if (tipoDato == "STATUS") return ( <> <p className={valor === "Activo" ? "text-success" : "text-error"}> {" "} <FontAwesomeIcon icon={faCircle} />{" "} </p> </> );
+  if (tipoDato == "STATUS") return (<BasicTooltip text={valor} item={ <> <p className={valor === "Activo" ? "text-success" : "text-error"}> {" "} <FontAwesomeIcon icon={faCircle} />{" "} </p> </>} />);
   if (tipoDato == "MENU") return (<DropDown colorIcon="text-info" icon={ faCog } items={ valor } />)
   return valor;
 };

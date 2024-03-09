@@ -7,19 +7,15 @@ import ListItemButton from "@mui/material/ListItemButton";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
 import Toolbar from "@mui/material/Toolbar";
-import Typography from "@mui/material/Typography";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { referenceMenu } from "../../routers/ReferenceMenu";
 import { Link } from "react-router-dom";
-import logo from '../../assets/logo.png'
+import logo from '../../assets/logo_01.png'
 const drawerWidth = 240;
 const style = {
-  position: 'absolute',
-  align: 'center',
-  'margin-left': 'auto',
-  'margin-right': 'auto',
+  'marginLeft': '20%',
   marginTop: '10px',
-  height: '50px',
+  height: '60px',
 }
 export default function MenuSidebar() {
 

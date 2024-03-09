@@ -139,7 +139,7 @@ nav a {
   width: 100%;
   padding: 0.5em;
   border-radius:0.5em;
-  box-shadow: 10px 1px 20px black;
+  box-shadow: 0px 1px 8px 5px rgba(0,0,0,0.48);
 }
 
 .circle-container {
@@ -162,12 +162,4 @@ nav a {
 
 .mr-10 {
   margin-right: 10px ;
-}
-
-.img-logo {
-  position: 'absolute';
-  left: '50%';
-  marginLeft: '-127px';
-  marginTop: '10px';
-  height: '50px';
 }
